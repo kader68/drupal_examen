@@ -1,0 +1,19 @@
+# Nom du module.
+name: 'Examen'
+
+# Description
+description: 'module pour examen'
+
+# Type du module : module ou theme
+type: module
+
+# Version de Drupal pour le module
+core: 8.x
+
+# Version de Drupal
+version: '8.x-1.0'
+
+# Groupe du module
+package: 'Examen'
+
+
