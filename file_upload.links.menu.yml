@@ -1,0 +1,6 @@
+file_upload.file_upload:
+  title: 'file_upload'
+  description: 'file_upload page'
+  route_name: file_upload.file_upload
+  menu_name: main
+  weight: 1

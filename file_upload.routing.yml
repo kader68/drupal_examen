@@ -1,0 +1,16 @@
+file_upload.file_upload:
+  path: '/file_upload/{param}'
+  defaults:
+    _title: 'file_upload'
+    _controller: '\Drupal\file_upload\Controller\File_uploadController::content'
+    param: 'Upload file '
+  requirements:
+    _access: 'TRUE'
+
+file_upload.form:
+  path: '/file_upload/file_uploadform'
+  defaults:
+    _title: 'File upload'
+    _form: '\Drupal\file_upload\Form\File_uploadForm'
+  requirements:
+    _access: 'TRUE'

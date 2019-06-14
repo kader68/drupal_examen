@@ -1,0 +1,5 @@
+file_upload.file_upload:
+  title: 'file_upload' 
+  route_name: file_upload.file_upload
+  base_route: file_upload.file_upload
+  weight: 1
