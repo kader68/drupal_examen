@@ -10,13 +10,17 @@ class File_uploadController extends ControllerBase {
   * @param string $param
   * @return array
   */
- public function content($param = '') {
-   $message = $this->t('You are on the file_upload page. Your name is @username! @param', [
-     '@username' => $this->currentUser()->getAccountName(),
-     '@param' => $param,
-   ]);
+ public function content($param) {
+  $nbr = \Drupal::state()->get('key');
 
-   return ['#markup' => $message];
+    if($nbr == NULL){
+
+        \Drupal::state()->set('key','value');
+
+    }else{ 
+           }
+
+   return ['#markup' => $nbr];
  }
 
 }

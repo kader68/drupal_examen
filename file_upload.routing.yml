@@ -14,3 +14,11 @@ file_upload.form:
     _form: '\Drupal\file_upload\Form\File_uploadForm'
   requirements:
     _access: 'TRUE'
+
+file_upload.download:
+  path: '/mon_fichier/file_uploadform/{param}/file-dl'
+  defaults:
+    _title: 'download file'
+    _controller: '\Drupal\file_upload\Controller\File_uploadController::content'
+  requirements:
+    _access: 'TRUE'
